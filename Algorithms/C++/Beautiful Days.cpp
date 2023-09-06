@@ -1,0 +1,116 @@
+/*
+Lily likes to play games with integers. She has created a new game where she determines the difference between a number and its reverse.
+She decides to apply her game to decision making. She will look at a numbered range of days and will only go to a movie on a beautiful day.
+Given a range of numbered days, [i.....j] and a number k, determine the number of days in the range that are beautiful. Beautiful numbers are defined as numbers where |i - reverse(i)| is evenly divisible by k. If a day's value is a beautiful number, it is a beautiful day. Return the number of beautiful days in the range.
+
+Function Description
+Complete the beautifulDays function in the editor below.
+beautifulDays has the following parameter(s):
+int i: the starting day number
+int j: the ending day number
+int k: the divisor
+Returns
+- int: the number of beautiful days in the range
+
+Input Format
+A single line of three space-separated integers describing the respective values of i, j, and k.
+
+Constraints
+1 <= i <= j <= 2*10^6
+1 <= k <= 2*10^9
+*/
+
+#include <bits/stdc++.h>
+using namespace std;
+
+string ltrim(const string &);
+string rtrim(const string &);
+vector<string> split(const string &);
+
+/*
+ * Complete the 'beautifulDays' function below.
+ * The function is expected to return an INTEGER.
+ * The function accepts following parameters:
+ *  1. INTEGER i
+ *  2. INTEGER j
+ *  3. INTEGER k
+ */
+
+int beautifulDays(int i, int j, int k) {
+    int ans = 0;
+    for(i=i;i<=j;i++)
+    {
+        string num = to_string(i);
+        string rev = num;
+        reverse(rev.begin(), rev.end());
+        int reverse = stoi(rev);
+        if(abs(i-reverse)%k==0)
+        {
+            ans++;
+        }
+    }
+    return ans;
+}
+
+int main()
+{
+    ofstream fout(getenv("OUTPUT_PATH"));
+
+    string first_multiple_input_temp;
+    getline(cin, first_multiple_input_temp);
+
+    vector<string> first_multiple_input = split(rtrim(first_multiple_input_temp));
+
+    int i = stoi(first_multiple_input[0]);
+
+    int j = stoi(first_multiple_input[1]);
+
+    int k = stoi(first_multiple_input[2]);
+
+    int result = beautifulDays(i, j, k);
+
+    fout << result << "\n";
+
+    fout.close();
+
+    return 0;
+}
+
+string ltrim(const string &str) {
+    string s(str);
+
+    s.erase(
+        s.begin(),
+        find_if(s.begin(), s.end(), not1(ptr_fun<int, int>(isspace)))
+    );
+
+    return s;
+}
+
+string rtrim(const string &str) {
+    string s(str);
+
+    s.erase(
+        find_if(s.rbegin(), s.rend(), not1(ptr_fun<int, int>(isspace))).base(),
+        s.end()
+    );
+
+    return s;
+}
+
+vector<string> split(const string &str) {
+    vector<string> tokens;
+
+    string::size_type start = 0;
+    string::size_type end = 0;
+
+    while ((end = str.find(" ", start)) != string::npos) {
+        tokens.push_back(str.substr(start, end - start));
+
+        start = end + 1;
+    }
+
+    tokens.push_back(str.substr(start));
+
+    return tokens;
+}
