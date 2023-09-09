@@ -9,7 +9,6 @@ Comparison points is the total points a person earned.
 Given a and b, determine their respective comparison points.
 
 Function Description
-
 Complete the function compareTriplets in the editor below.
 compareTriplets has the following parameter(s):
 int a[3]: Alice's challenge rating
