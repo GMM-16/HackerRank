@@ -24,7 +24,7 @@ The second line contains 3 space-separated integers, b[0], b[1], and b[2], the r
 Constraints
 1 ≤ a[i] ≤ 100
 1 ≤ b[i] ≤ 100
-/*
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
