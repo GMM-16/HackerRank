@@ -8,12 +8,15 @@ plusMinus has the following parameter(s):
 int arr[n]: an array of integers
 Print
 - Print the ratios of positive, negative and zero values in the array. Each value should be printed on a separate line with 6 digits after the decimal. The function should not return a value.
+
 Input Format
 The first line contains an integer, n, the size of the array.
 The second line contains n space-separated integers that describe .
-Constraint
+
+Constraints
 0 < n <= 100
 -100 <= arr[i] <= 100
+
 Output Format
 Print the following  lines, each to 6 decimals:
 proportion of positive values
