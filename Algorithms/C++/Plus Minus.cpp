@@ -3,7 +3,6 @@ Given an array of integers, calculate the ratios of its elements that are positi
 Note: This challenge introduces precision problems. The test cases are scaled to six decimal places, though answers with absolute error of up to 10^-4 are acceptable.
 
 Function Description
-
 Complete the plusMinus function in the editor below.
 plusMinus has the following parameter(s):
 int arr[n]: an array of integers
