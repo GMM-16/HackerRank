@@ -2,7 +2,6 @@
 Given a square matrix, calculate the absolute difference between the sums of its diagonals.
 
 Function description
-
 Complete the  function in the editor below.
 diagonalDifference takes the following parameter:
 int arr[n][m]: an array of integers
