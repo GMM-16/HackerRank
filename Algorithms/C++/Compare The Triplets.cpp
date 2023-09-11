@@ -9,7 +9,6 @@ Comparison points is the total points a person earned.
 Given a and b, determine their respective comparison points.
 
 Function Description
-
 Complete the function compareTriplets in the editor below.
 compareTriplets has the following parameter(s):
 int a[3]: Alice's challenge rating
@@ -35,7 +34,6 @@ vector<string> split(const string &);
 
 /*
  * Complete the 'compareTriplets' function below.
- *
  * The function is expected to return an INTEGER_ARRAY.
  * The function accepts following parameters:
  *  1. INTEGER_ARRAY a
