@@ -9,7 +9,6 @@ Its base and height are both equal to . It is drawn using # symbols and spaces. 
 Write a program that prints a staircase of size .
 
 Function Description
-
 Complete the staircase function in the editor below.
 staircase has the following parameter(s):
 int n: an integer
@@ -31,7 +30,6 @@ string rtrim(const string &);
 
 /*
  * Complete the 'staircase' function below.
- *
  * The function accepts INTEGER n as parameter.
  */
 
