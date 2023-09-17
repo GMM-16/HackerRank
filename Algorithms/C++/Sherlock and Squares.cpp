@@ -37,9 +37,7 @@ vector<string> split(const string &);
 int squares(int a, int b) {
     int ans = 0;
     int x = floor(sqrt(b));
-    cout<<x;
     int y = ceil(sqrt(a));
-    cout<<y;
     ans = x - y + 1;
     return ans;
 }
