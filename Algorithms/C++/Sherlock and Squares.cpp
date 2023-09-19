@@ -38,8 +38,8 @@ int squares(int a, int b) {
     int ans = 0;
     int x = floor(sqrt(b));
     int y = ceil(sqrt(a));
-    ans = x - y + 1;
-    return ans;
+    ans = x - y;
+    return ans+1;
 }
 
 int main()
