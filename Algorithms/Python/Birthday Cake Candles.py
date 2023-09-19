@@ -26,29 +26,30 @@ import re
 import sys
 
 #
-# Complete the 'timeConversion' function below.
-# The function is expected to return a STRING.
-# The function accepts STRING s as parameter.
+# Complete the 'birthdayCakeCandles' function below.
+# The function is expected to return an INTEGER.
+# The function accepts INTEGER_ARRAY candles as parameter.
 #
 
-def timeConversion(s):
+def birthdayCakeCandles(candles):
     # Write your code here
-    time = s.split(':')
-    hh,mm,ss = int(time[0]),int(time[1]),int(time[2][:2])
-    pm = s[-2:]=="PM"
-    if pm and hh!=12:
-        hh = hh + 12
-    if not pm and hh==12:
-        hh = 0
-    return f"{hh:02d}:{mm:02d}:{ss:02d}"
+    ans = 0
+    temp = max(candles)
+    for i in range(len(candles)):
+        print(candles[i])
+        if candles[i]==temp:
+            ans = ans + 1
+    return ans
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
-    s = input()
+    candles_count = int(input().strip())
 
-    result = timeConversion(s)
+    candles = list(map(int, input().rstrip().split()))
 
-    fptr.write(result + '\n')
+    result = birthdayCakeCandles(candles)
+
+    fptr.write(str(result) + '\n')
 
     fptr.close()
