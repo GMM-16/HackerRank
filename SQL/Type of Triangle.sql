@@ -4,7 +4,6 @@ Equilateral: It's a triangle with 3 sides of equal length.
 Isosceles: It's a triangle with 2 sides of equal length.
 Scalene: It's a triangle with 3 sides of differing lengths.
 Not A Triangle: The given values of A, B, and C don't form a triangle.
-
 The TRIANGLES table is described as follows:
 
 TABLE TRIANGLES
