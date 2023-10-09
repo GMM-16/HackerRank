@@ -41,9 +41,9 @@ int howManyGames(int p, int d, int m, int s) {
     int games = 0;
     while (s >= p) 
     {
-        games++;
-        s -= p;
-        p = max(p - d, m);
+        games = games + 1;
+        s = s - p;
+        p = max(p-d, m);
     }
     return games;
 }
