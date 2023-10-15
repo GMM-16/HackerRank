@@ -12,7 +12,8 @@ This is a regex only challenge. You are not required to write code.
 You only have to fill in the regex pattern in the blank (_________).
 '''
 
-Regex_Pattern = r'\bhackerrank\b'	# Do not delete 'r'.
+Regex_Pattern = r'\bhackerrank\b'	
+# Do not delete 'r'.
 
 import re
 
