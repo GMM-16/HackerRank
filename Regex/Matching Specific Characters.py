@@ -3,7 +3,7 @@
 The character class [ ] matches only one out of several characters placed inside the square brackets.
 
 Task
-You have a test string .
+You have a test string S.
 Your task is to write a regex that will match S with following conditions:
 S must be of length: 6
 First character: 1, 2 or 3
