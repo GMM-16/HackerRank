@@ -34,7 +34,8 @@ You only have to fill the regex pattern in the blank (_________).
 #include <regex>
 using namespace std;
 
-int main() {
+int main() 
+{
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */
     string input;
     regex pattern("^(\\d{2}---){3}\\d{2}$|^(\\d{2}-){3}\\d{2}$|^(\\d{2}:){3}\\d{2}$|^(\\d{2}\\.){3}\\d{2}$");
