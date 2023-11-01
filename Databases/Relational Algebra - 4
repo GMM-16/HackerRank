@@ -1,0 +1,8 @@
+In precedence of set operators the expression is evaluated from:
+
+A.  Depends on the expression
+B.  Left to right
+C.  Right to left
+D.  From user specification
+
+Answer :- Left to right
