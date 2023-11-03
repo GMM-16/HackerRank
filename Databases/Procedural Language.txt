@@ -1,0 +1,8 @@
+Which one of the following is a procedural language ?
+
+A.  Domain relational calculus
+B.  Tuple relational calculus
+C.  Relational algebra
+D.  Query language
+
+Answer :- Relational algebra
