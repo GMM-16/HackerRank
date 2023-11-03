@@ -37,7 +37,6 @@ Assume that you have been provided the fragment of XML, shown below. Your task i
    <description>Boring</description>
 </movie>
 </collection>
-
 =end
 
 # Standard ruby library for XML parsing
