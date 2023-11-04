@@ -5,3 +5,4 @@ What is the integer x (1, 2, or 3)?
 
 Fill your answer in the text box below.
 
+3
