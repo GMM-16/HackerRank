@@ -3,4 +3,6 @@ We have information for each STUDENT (such as name, date of birth, date of enrol
 In real life, a student takes several courses simultaneously while a subject is studied by several students. 
 We need to capture this many-to-many relationship in our database. From the above information, what is the minimum number of tables required to structure this database in accordance with the rules of 2NF normalization?
 
+Fill your answer in the text box below.
+
 3
