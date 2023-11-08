@@ -1,0 +1,8 @@
+Which of these provides a total view of the organization?
+
+A.  OLAP
+B.  OLTP
+C.  Data Warehousing
+D.  Database
+
+Answer :- Data Warehousing
