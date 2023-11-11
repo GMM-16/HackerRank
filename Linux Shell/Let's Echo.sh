@@ -8,4 +8,4 @@ Output Format
 HELLO
 '
 
-echo "Hello"
+echo "HELLO"
