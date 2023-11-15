@@ -13,5 +13,5 @@ For each line of input, print its 3rd character on a new line for a total of N l
 
 while read line;
 do
-    echo "${line}" | cut -c 3
+    echo $line | cut -c 3
 done
