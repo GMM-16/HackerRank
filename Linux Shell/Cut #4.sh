@@ -12,7 +12,7 @@ Output Format
 The output should contain N lines. Each line should contain just the first four characters of the corresponding input line.
 '
 
-while read word
+while read line
 do
-    echo $word | cut -c -4
+    echo $line | cut -c -4
 done
