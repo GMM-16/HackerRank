@@ -14,5 +14,5 @@ The output should contain N lines. For each input line, print the characters fro
 
 while read line
 do
-    echo "$line" | cut -c 13-
+    echo $line | cut -c 13-
 done
