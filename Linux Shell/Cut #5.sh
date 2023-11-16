@@ -15,5 +15,5 @@ The output should contain N lines. For each line in the input, print the first t
 
 while read line
 do 
-    echo $line | cut -f 1-3
+    echo "$line" | cut -f 1-3
 done
