@@ -11,7 +11,7 @@ Output Format
 For each line of input, print its 3rd character on a new line for a total of N lines of output.
 '
 
-while read line;
+while read line
 do
     echo $line | cut -c 3
 done
