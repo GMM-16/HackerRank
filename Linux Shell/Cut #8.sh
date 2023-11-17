@@ -14,5 +14,5 @@ The output should contain N lines. For each input sentence, identify and display
 
 while read line;
 do
-    echo $line | cut -d " " -f 1-3;
+    echo $line | cut -d " " -f 1-3
 done;
