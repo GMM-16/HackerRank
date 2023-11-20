@@ -8,4 +8,4 @@ Output Format
 Rearrange the rows of the table in descending order of the values for the average temperature in January (i.e, the mean temperature value provided in the second column).
 '
 
-sort -nr -k2 -t $'\t'
+sort -r -n -k 2 -t $'\t'
