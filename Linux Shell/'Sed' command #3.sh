@@ -9,6 +9,6 @@ A text file will be piped to your command via STDIN.
 
 Output Format
 Highlight all occurrences of "thy" as shown in the example below.
+'
 
 sed 's/thy/{&}/ig'
-'
