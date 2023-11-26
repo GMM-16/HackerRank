@@ -8,6 +8,6 @@ A block of ASCII text.
 
 Output Format
 Output the text with all parentheses () replaced with box brackets [].
-'
 
 tr '()' '[]'
+'
