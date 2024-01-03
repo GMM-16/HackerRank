@@ -4,7 +4,9 @@ A for loop is a programming language statement which allows code to be repeatedl
 The syntax is
 
 for ( <expression_1> ; <expression_2> ; <expression_3> )
+{
     <statement>
+}
 
 expression_1 is used for intializing variables which are generally used for controlling the terminating flag for the loop.
 expression_2 is used to check for the terminating condition. If this evaluates to false, then the loop is terminated.
