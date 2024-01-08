@@ -28,7 +28,8 @@ using namespace std;
 int main() 
 {
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
-    int arraySize = 0, temp;
+    int temp;
+    int arraySize = 0;
     cin >> arraySize;
     vector<int> arr (arraySize);
     for(int i = 0; i < arraySize; i++)
