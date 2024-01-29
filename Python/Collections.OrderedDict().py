@@ -20,6 +20,7 @@ Output Format
 Print the item_name and net_price in order of its first occurrence.
 '''
 
+# Enter your code here. Read input from STDIN. Print output to STDOUT
 from collections import OrderedDict
 n=int(input())
 od = OrderedDict()
