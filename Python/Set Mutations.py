@@ -1,30 +1,64 @@
 '''
-You are given two sets, A and B.
-Your job is to find whether set A is a subset of set B.
+We have seen the applications of union, intersection, difference and symmetric difference operations, but these operations do not make any changes or mutations to the set.
+We can use the following operations to create mutations to a set:
 
-If set A is subset of set B, print True.
-If set A is not a subset of set B, print False.
+.update() or |=
+
+Update the set by adding elements from an iterable/another set.
+>>> H = set("Hacker")
+>>> R = set("Rank")
+>>> H.update(R)
+>>> print H
+set(['a', 'c', 'e', 'H', 'k', 'n', 'r', 'R'])
+.intersection_update() or &=
+
+Update the set by keeping only the elements found in it and an iterable/another set.
+>>> H = set("Hacker")
+>>> R = set("Rank")
+>>> H.intersection_update(R)
+>>> print H
+set(['a', 'k'])
+.difference_update() or -=
+
+Update the set by removing elements found in an iterable/another set.
+>>> H = set("Hacker")
+>>> R = set("Rank")
+>>> H.difference_update(R)
+>>> print H
+set(['c', 'e', 'H', 'r'])
+.symmetric_difference_update() or ^=
+
+Update the set by only keeping the elements found in either set, but not in both.
+>>> H = set("Hacker")
+>>> R = set("Rank")
+>>> H.symmetric_difference_update(R)
+>>> print H
+set(['c', 'e', 'H', 'n', 'r', 'R'])
+
+TASK
+You are given a set A and N number of other sets. These N number of sets have to perform some specific mutation operations on set A.
+Your task is to execute those operations and print the sum of elements from set A.
 
 Input Format
-The first line will contain the number of test cases, T.
-The first line of each test case contains the number of elements in set A.
-The second line of each test case contains the space separated elements of set A.
-The third line of each test case contains the number of elements in set B.
-The fourth line of each test case contains the space separated elements of set B.
-
-Constraints
-0 < T < 21
-0 < Number of elements in each set < 1001
+The first line contains the number of elements in set A.
+The second line contains the space separated list of elements in set A.
+The third line contains integer N, the number of other sets.
+The next 2*N lines are divided into N parts containing two lines each.
+The first line of each part contains the space separated entries of the operation name and the length of the other set.
+The second line of each part contains space separated list of elements in the other set.
+0 < len(set(A)) < 1000
+0 < len(otherSets) < 100
+0 < N < 100
 
 Output Format
-Output True or False for each test case on separate lines.
+Output the sum of elements in set .
 '''
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-T=int(input())
-for i in range(T):
-    a = int(input())
-    A = set(map(int, input().split()))
-    b = int(input())
-    B = set(map(int, input().split()))
-    print(A.issubset(B))
+input()
+ans = set(map(int, input().split()))
+for i in range(int(input())):
+    cmd = input().split()[0]
+    setN = set(map(int, input().split()))
+    getattr(ans, cmd)(setN)
+print(sum(ans))
