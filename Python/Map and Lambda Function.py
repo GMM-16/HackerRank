@@ -26,8 +26,11 @@ Output Format
 A list on a single line containing the cubes of the first N fibonacci numbers.
 '''
 
-cube = lambda x:x**3 
+cube = lambda x: x**3
+# complete the lambda function
+
 def fibonacci(n):
+    # return a list of fibonacci numbers
     f=[0, 1]
     a=0
     b=1
@@ -44,3 +47,7 @@ def fibonacci(n):
             a=b
             b=s
         return f
+
+if __name__ == '__main__':
+    n = int(input())
+    print(list(map(cube, fibonacci(n))))
