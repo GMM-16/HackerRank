@@ -2,7 +2,6 @@
 Basic mathematical functions operate element-wise on arrays. They are available both as operator overloads and as functions in the NumPy module.
 
 import numpy
-
 a = numpy.array([1,2,3,4], float)
 b = numpy.array([5,6,7,8], float)
 print a + b                     #[  6.   8.  10.  12.]
