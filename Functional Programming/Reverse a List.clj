@@ -6,6 +6,10 @@ Each element, X, of the list is displayed on a separate line.
 
 Output Format
 The output is the reverse of the input list.
+
+Constraints
+1 <= N <= 100
+0 <= X <= 100
 ")
 
 (fn[lst] (reverse lst))
