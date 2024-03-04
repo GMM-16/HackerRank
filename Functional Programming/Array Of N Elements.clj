@@ -2,11 +2,6 @@ comment("
 Create an array of n integers, where the value of n is passed as an argument to the pre-filled function in your editor. This challenge uses a custom checker, so you can create any array of n integers.
 Note: Code stubs are provided for almost every language in which you must either fill in a blank (i.e., ____) or write your code in the area specified by comments.
 
-Method Signature
-Number Of Parameters: 1
-Parameters: [n]
-Returns: List or Vector
-
 Input Format
 A single integer, n.
 
