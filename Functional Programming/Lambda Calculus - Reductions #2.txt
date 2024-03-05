@@ -1,0 +1,7 @@
+Reduce the following to no more than one term. If the expression cannot be reduced, enter "CAN'T REDUCE".
+((λx.((λy.(x y))x))(λz.w))
+Your answer should look like:
+u
+(This is not the actual answer, just a demonstration of how you should present it.)
+
+w
