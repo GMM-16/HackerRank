@@ -2,6 +2,5 @@ Reduce the following expression to no more than one term. If the expression cann
 ((λx.(x y))(λz.z))
 Your answer should look like:
 u
-(This is not the actual answer, just a demonstration of how you should present it.)
 
 y
