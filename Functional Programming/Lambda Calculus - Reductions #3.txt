@@ -1,0 +1,6 @@
+Reduce the following expression, using the beta-rule, to no more than one term. If the expression cannot be reduced, enter "CAN'T REDUCE".
+((λx.(x x))(λx.(x x))) 
+Your answer should look like:
+u
+
+CAN'T REDUCE
