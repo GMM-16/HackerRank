@@ -1,0 +1,4 @@
+Under Church encoding, what natural number does the expression λx.λy.x47y represent?
+The required answer is an integer, which you may enter in the text box. Do not leave any leading or trailing spaces.
+
+47
