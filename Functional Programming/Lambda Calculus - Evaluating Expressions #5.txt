@@ -1,1 +1,2 @@
-
+Compute the value of λx.λy.y.
+The required answer is an integer, which you may enter in the text box. Do not leave any leading or trailing spaces.
