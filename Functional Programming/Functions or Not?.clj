@@ -21,17 +21,14 @@ Output Format
 On a new line for each test case, print YES if the set of ordered pairs represent a valid function, or NO if they do not.
 ")
 
-(ns lab
-  (:require [clojure.string :as str]))
-(defn read-value []
-  (-> (read-line) (str/split #" ") first Integer/parseInt))
-(defn func? [lst]
-  (if (apply distinct? lst) "YES" "NO"))
-(defn solution []
-  (let [N (read-value)]
-    (repeatedly N (fn []
-                    (let [n (read-value)
-                          v (repeatedly n #(read-value))]
-                      (func? v))))))```
-(doseq [ans (solution)]
-  (println ans))
+(def n (Integer/valueOf (read-line)))
+(defn validfn []
+    (let [nv (Integer/parseInt (read-line))
+          addxy (fn [s [x y]] (assoc s x (set (cons y (seq (get s x))))))
+          mapping (reduce addxy {}
+                          (for [_ (range nv)]
+                               (map #(Integer/parseInt %) (re-seq #"[-\d.]+" (read-line)))))]
+         (if (some #(> % 1) (map count (vals mapping))) "NO" "YES")
+    ))
+(doseq [_ (range n)]    
+    (println (validfn)))
