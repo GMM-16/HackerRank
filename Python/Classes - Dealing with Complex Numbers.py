@@ -11,7 +11,7 @@ C + D
 C - D
 C * D
 C / D
-mod(C0
+mod(C)
 mod(D)
 
 For complex numbers with non-zero real(A) and complex part(B), the output should be in the following format: A + Bi
