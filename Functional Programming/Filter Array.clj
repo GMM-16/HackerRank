@@ -3,7 +3,7 @@ Filter a given array of integers and output only those values that are less than
 
 Input Format
 The first line contains the delimiter X.
-The next B lines each contain an integer, which represents the elements of the list/array. You have to read the input to the End-Of-File.
+The next B lines each contain an integer, which represents the elements of the list/array. You have to read the input to the end-of-File.
 
 Output Format
 Print all the integers from the array that are less than the given upper limit X in value on separate lines. The sequence should be the same as it was in the original array.
