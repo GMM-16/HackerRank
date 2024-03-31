@@ -7,7 +7,7 @@ N integers contained in the list, each on a separate line.
 Output Format
 Output the list with the integers at odd positions removed i.e. the first element, the third element and so on. The relative positions of the remaining even-position elements should be the same as they were in the original array. Each integer will be on a separate line.
 
-NOTE: By odd positions, we mean the first, third, fifth, etc position of the array needs to be filtered out. As per programming language conventions, these might (and they often do) correspond to indices 0,2,4 and so on.
+NOTE: By odd positions, we mean the first, third, fifth, etc position of the array needs to be filtered out. As per programming language conventions, these might (and they often do) correspond to indices 0, 2, 4 and so on.
 ")
 
 (fn [lst](keep-indexed #(if (odd? %) %2) lst))
